@@ -466,9 +466,40 @@ button{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.speciality-link {}
+.speciality-link {
+    display: block;
+    
+}
+
+.speciality-img-wrapper {
+    position: relative; 
+    overflow: hidden;
+}
 
 .speciality-img {}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+    padding: 40px 32px 164px 32px;
+    overflow-y: auto;
+    transform: translate(0, 100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+.speciality-link:hover .overlay,
+.speciality-link:focus .overlay {
+    transform: translate(0, 0);
+}
 
 .speciality-wrap {
     padding: 32px 16px;
