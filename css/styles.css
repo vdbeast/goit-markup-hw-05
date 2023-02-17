@@ -653,7 +653,7 @@ button{
 }
 
 .backdrop.is-hidden .modal {
-    transform: translate(50%, -50%) scale(0);
+    transform: translate(500%, -50%) scale(0);
 }
 
 .modal-close {
